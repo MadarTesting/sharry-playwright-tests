@@ -18,6 +18,7 @@ test.describe('customer tests', () => {
         customerPage = new CustomerPage(page);
         await customerPage.openCreateForm();
     });
+    
 
     test('create customer - male', async ({ page }) => {
         await customerPage.createMaleCustomer({
@@ -28,6 +29,6 @@ test.describe('customer tests', () => {
             dob: '1995-05-20',
         });
         await customerPage.expectCustomerSaved();
-        await page.pause();
+      //  await page.pause();
     });
 });

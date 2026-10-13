@@ -51,7 +51,7 @@ export class RegisterPage {
 
   //============= assertions ============
   async expectRegisterSuccess() {
-    // مؤقت: بيتأكد إن الصفحة اتغيرت بعد التسجيل
+    
     await expect(this.page).not.toHaveURL(this.url);
   }
 }

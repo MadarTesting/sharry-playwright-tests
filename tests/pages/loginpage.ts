@@ -32,7 +32,7 @@ export class LoginPage {
 
     //============= assertions ============
     async expectLoginSuccess() {
-        // مؤقت: بيتأكد إن الصفحة اتغيرت بعد الدخول
+       
         await expect(this.page).not.toHaveURL(this.url);
     }
 }

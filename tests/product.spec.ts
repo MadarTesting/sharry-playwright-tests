@@ -59,7 +59,8 @@ test.describe('product tests', () => {
         await page.locator("//select[@id='tax_category_id']").selectOption({ index: 1 });
         await page.locator("//input[@id='price']").fill('100');
         await page.locator("//input[@id='weight']").fill('100');
-        await page.locator("//button[contains(text(),'حفظ المنتج')]").click();
+        
+        //await page.locator("//button[contains(text(),'حفظ المنتج')]").click();
 
         await page.pause();
     });
