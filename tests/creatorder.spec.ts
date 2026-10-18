@@ -13,7 +13,7 @@ test.describe('order tests', () => {
     test('create order', async ({ page }) => {
         await loginPage.login(testdata.email, testdata.password);
         await expect(page).toHaveURL(/dashboard/);
-
+        //علشان  لو الموقع  عربي او انجليزي { name: /^(المبيعات|Sales)$/i }
         const salesLink = page.getByRole('link', { name: /^(المبيعات|Sales)$/i });
         await expect(salesLink).toBeVisible();
         await salesLink.click();

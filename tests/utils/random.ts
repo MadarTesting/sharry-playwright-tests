@@ -8,7 +8,7 @@ export function randomSaudiMobile(): string {
 
 // نفس الرقم بالصيغة الدولية: 9665XXXXXXXX (من غير + ومن غير صفر)
 export function toIntlSaudi(local: string): string {
-    return `966${local.slice(1)}`;
+    return `966${local.slice(1)}`
 }
 
 // إيميل فريد في كل تشغيلة
