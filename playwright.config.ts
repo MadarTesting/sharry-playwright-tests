@@ -22,6 +22,10 @@ export default defineConfig({
 
     /* Record a trace on every run so the steps show up in UI Mode */
     trace: 'on',
+    screenshot: 'only-on-failure', // صورة عند الفشل بس
+    video: 'retain-on-failure',    // فيديو يتحفظ عند الفشل بس
+    // trace: 'on-first-retry',       // trace فيه خطوات وصور لكل خطوة
+
   },
 
   /* Configure projects */

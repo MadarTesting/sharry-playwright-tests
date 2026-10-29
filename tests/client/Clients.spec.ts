@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from './pages/loginpage';
-import { CustomerPage } from './pages/newcustomer';
-import { randomSaudiMobile, randomEmail } from './utils/random';
-import testdata from './testdata/testdata.json';
+import { LoginPage } from '../pages/loginpage';
+import { CustomerPage } from '../pages/newcustomer';
+import { randomSaudiMobile, randomEmail } from '../utils/random';
+import testdata from '../testdata/testdata.json';
 
 test.describe('customer tests', () => {
     let customerPage: CustomerPage;
